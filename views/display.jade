@@ -1,0 +1,35 @@
+extends displaylayout
+
+
+block content
+    h1= title
+
+
+        form#GraphSave(name="graphSave",method="post",action="/graph/save")
+            input#data_min(type="number", placeholder="Data Min", name="data_min")
+            input#data_max(type="number", placeholder="Data Max", name="data_max")
+            input#title(type="text", placeholder="Title", name="title")
+            select(name='chart_type')
+                option(value='Line', selected='selected') Line
+                option(value='Scatter') Scatter
+                option(value='Bar') Bar
+            button#btnSubmit(type="submit") submit
+
+    div
+
+            form#GraphGet(name="graphGet", onsubmit='RedirectFunction(); return false;')
+                select#Old_IDs
+                button#btnSubmit(type="submit") Fetch
+
+    div
+
+            ul#ul.nav.nav-tabs
+                li.active
+                    a(href='#') Chart View
+
+
+
+
+    div
+
+    #container(style='width:100%; height:400px;')
