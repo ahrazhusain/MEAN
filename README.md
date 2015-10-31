@@ -1,7 +1,7 @@
-#PortfolioStrat MEAN Programming Exercise
+#MEAN Programming Exercise
 
 
-Created a scaleddown version of PortfolioStrat's' existing technology stack.
+Created a scaleddown version of an existing technology stack.
 The output is a simple webpage in the frontend, with a node.js server and mongodb
 database in the backend.
 
